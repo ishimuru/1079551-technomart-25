@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 13px;
+    line-height-step: 24px;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 17px;
+
+    background-color: #32425c;
+}
+
+.footer-top {
+    background-color: #32425c;
+}
+
+.footer-bottom, .top-header-navigation {
+    background-color: #293449;
+}
+
+
+.main-nav-list,
+.session-navigation,
+.header-info-sign-in,
+.footer-navigation-list,
+.brands-list,
+.services-list-btn,
+.footer-soial-list,
+.catalog-list {
+    list-style: none;
+}
+
+.main-nav-list a,
+.footer-navigation-list a {
+    color: #ffffff;
+}
+
+.main-nav-list a:hover,
+.main-nav-list a:focus {
+    color: rgba(255, 255, 255, 0.6);
+
+    background-color: #293449;
+}
+
+.header-info-sign-in a:hover,
+.header-info-sign-in a:focus {
+    color: #e9292a;
+}
+
+.subtitle {
+    font-size: 30px;
+    color: #32425c;
+    line-height: 30px;
+}
+
+.button {
+    font: inherit;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: #e9292a;
+    border: none;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #ca2c37;
+}
+
+.button:active {
+    background-color: #ba2732
+}
+
+.footer-bottom {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+
+}
+
+.footer-bottom a {
+    font: inherit;
+    color: #ffffff;
+}
+
+.catalog h3 {
+    font-family: 'PT Sans', Arial, sans-serif;
+    width: 155px;
+    height: 33px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+    text-align: center;
+} 
+
+.catalog a {
+    color: #000000;
+}
+
+.top-header-navigation a {
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.06;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}

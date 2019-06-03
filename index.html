@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,7 +41,7 @@
       </ul>
     </div>
 
-    <nav class="main-nav">
+    <nav class="main-navigation">
       <ul class="main-nav-list">
         <li><a href="#">Главная</a></li>
         <li><a href="#">Компания</a></li>
@@ -60,22 +62,10 @@
       <a class="button" href="#">все популярные товары</a>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <h3>
-            <a href="#">
-              <span class="catalog-category">Перфоратор</span>
-              <span class="catalog-brands">BOSCH </span>
-              <span class="catalog-item-title">BFG 3000</span>
-            </a>
-          </h3>
+
           <p class=catalog-item-image>
             <a href="#"><img src="img/product-1.jpg" width="218" height="164" alt="Перфоратор BOSCH BFG 3000"></a>
           </p>
-          <p class="catalog-item-price">
-            <b class="price-sale">22500 P.</b>
-            <a class="price-button" href="#">15500 P.</a>
-          </p>
-        </li>
-        <li class="catalog-item">
           <h3>
             <a href="#">
               <span class="catalog-category">Перфоратор</span>
@@ -83,46 +73,71 @@
               <span class="catalog-item-title">BFG 3000</span>
             </a>
           </h3>
-          <p class=catalog-item-image>
-            <a href="#"><img src="img/product-2.jpg" width="218" height="164" alt="Перфоратор BOSCH BFG 3000"></a>
-          </p>
           <p class="catalog-item-price">
             <b class="price-sale">22500 P.</b>
             <a class="price-button" href="#">15500 P.</a>
           </p>
         </li>
+        <a class="button" href="#">Купить</a>
+        <a class="button" href="#">В закладки</a>
         <li class="catalog-item">
-            <h3>
-              <a href="#">
-                <span class="catalog-category">Перфоратор</span>
-                <span class="catalog-brands">BOSCH </span>
-                <span class="catalog-item-title">BFG 3000</span>
-              </a>
-            </h3>
-            <p class=catalog-item-image>
-              <a href="#"><img src="img/product-3.jpg" width="218" height="164" alt="Перфоратор BOSCH BFG 3000"></a>
-            </p>
-            <p class="catalog-item-price">
-              <b class="price-sale">22500 P.</b>
-              <a class="price-button" href="#">15500 P.</a>
-            </p>
-          </li>
-          <li class="catalog-item">
-              <h3>
-                <a href="#">
-                  <span class="catalog-category">Перфоратор</span>
-                  <span class="catalog-brands">BOSCH </span>
-                  <span class="catalog-item-title">BFG 3000</span>
-                </a>
-              </h3>
-              <p class=catalog-item-image>
-                <a href="#"><img src="img/product-1.jpg" width="218" height="164" alt="Перфоратор BOSCH BFG 3000"></a>
-              </p>
-              <p class="catalog-item-price">
-                <b class="price-sale">22500 P.</b>
-                <a class="price-button" href="#">15500 P.</a>
-              </p>
-            </li>
+
+          <p class=catalog-item-image>
+            <a href="#"><img src="img/product-2.jpg" width="218" height="164" alt="Перфоратор BOSCH BFG 3000"></a>
+          </p>
+          <h3>
+            <a href="#">
+              <span class="catalog-category">Перфоратор</span>
+              <span class="catalog-brands">BOSCH </span>
+              <span class="catalog-item-title">BFG 3000</span>
+            </a>
+          </h3>
+          <p class="catalog-item-price">
+            <b class="price-sale">22500 P.</b>
+            <a class="price-button" href="#">15500 P.</a>
+          </p>
+
+          <a class="button" href="#">Купить</a>
+          <a class="button" href="#">В закладки</a>
+        </li>
+        <li class="catalog-item">
+
+          <p class=catalog-item-image>
+            <a href="#"><img src="img/product-3.jpg" width="218" height="164" alt="Перфоратор BOSCH BFG 3000"></a>
+          </p>
+          <h3>
+            <a href="#">
+              <span class="catalog-category">Перфоратор</span>
+              <span class="catalog-brands">BOSCH </span>
+              <span class="catalog-item-title">BFG 3000</span>
+            </a>
+          </h3>
+          <p class="catalog-item-price">
+            <b class="price-sale">22500 P.</b>
+            <a class="price-button" href="#">15500 P.</a>
+          </p>
+          <a class="button" href="#">Купить</a>
+          <a class="button" href="#">В закладки</a>
+        </li>
+        <li class="catalog-item">
+
+          <p class=catalog-item-image>
+            <a href="#"><img src="img/product-1.jpg" width="218" height="164" alt="Перфоратор BOSCH BFG 3000"></a>
+          </p>
+          <h3>
+            <a href="#">
+              <span class="catalog-category">Перфоратор</span>
+              <span class="catalog-brands">BOSCH </span>
+              <span class="catalog-item-title">BFG 3000</span>
+            </a>
+          </h3>
+          <p class="catalog-item-price">
+            <b class="price-sale">22500 P.</b>
+            <a class="price-button" href="#">15500 P.</a>
+          </p>
+          <a class="button" href="#">Купить</a>
+          <a class="button" href="#">В закладки</a>
+        </li>
       </ul>
     </section>
 
@@ -131,7 +146,7 @@
     <section class="brands">
       <h2 class="subtitle">Бренды</h2>
       <a class="button" href="#">все производители</a>
-      <ul>
+      <ul class="brands-list">
         <li><img src="img/logo-bosh.png" width="126" height="37" alt="Bosh"></li>
         <li><img src="img/logo-makita.png" width="123" height="40" alt="Makita"></li>
         <li><img src="img/logo-dewalt.png" width="146" height="44" alt="Dewalt"></li>
@@ -243,11 +258,11 @@
         <li class="social-button"><a href="#"><img src="img/icon-insta.svg" width="25" height="25" alt="instagram">instagram</a></li>
       </ul>
 
-      <a class="footer-mail-to-us">Обратная связь:</a>
+      <p class="footer-mail-to-us">Обратная связь:</p>
       <a class="additional-info-link" href="#">mail@htmlacademy.ru</a>
 
 
-      <a class="footer-who-made">Разработано</a>
+      <a class="footer-who-made">Разработано-</a>
       <a class="additional-info-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
     </div>
 
