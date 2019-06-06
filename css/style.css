@@ -98,7 +98,8 @@ body {
    .services-list-btn,
    .footer-soial-list,
    .catalog-list,
-   .session-btn-list {
+   .session-btn-list,
+   ul {
     list-style: none;
    }
    
@@ -121,7 +122,7 @@ body {
    
    .subtitle {
     text-transform: uppercase;
-    width: 260px;
+    width: 660px;
   height: 21px;
   font-family: Cuprum;
   font-size: 30px;
@@ -241,8 +242,21 @@ body > * > * > * > * > *{
   background-color: #dc91d8;
 }
 
+.item4 {
+    width: 300px;
+  height: 123px;
+  background-color: #8ed78f;
+}
+
+.item5 {
+    width: 300px;
+  height: 123px;
+  background-color: #ffc047;
+}
+
 .slider-list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
 }
@@ -364,13 +378,13 @@ body > * > * > * > * > *{
  .header-info-h1-wrapper {
     width: 310px; 
     
-    margin: 0 auto;;
+    margin: 0 auto;
     padding: 0px;
  }
    
  .header-info-contacts {
      width: 310px;
-     margin: 0 auto;;
+     margin: 0 auto;
  }
 
  .header-info-sign-in {
@@ -380,9 +394,28 @@ body > * > * > * > * > *{
     padding: 0px;
  }
 
- .container-item1 {
-     display: flex;
- }
 
 
+.container .subtitle-wrapper {
+    display: flex; 
+}
+.container .subtitle .button{
+    padding-left: 660px;
+}
+
+.catalog-item {
+    width: 230px;
+    margin: 0 auto;
+}
  
+.catalog-list,
+.brands-list {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brands-list li{
+    width: 230px;
+    margin: 0 auto;
+}
