@@ -14,7 +14,8 @@ html {
 /* .modal {
     display: none;
 }
-.visually-hidden {
+ */
+ .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -26,8 +27,7 @@ html {
     clip: rect(0 0 0 0);
     -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
-  } */
-
+  }
 
 
 
@@ -334,17 +334,49 @@ html {
 }
 
 
+/* 
+-------MAIN-------
+ */
 
-   .footer-top {
-    background-color: #32425c;
-   }
-   
 
-   
-   
-   
-  
-   
+/*
+------SERVICE----
+*/
+
+.services {
+    display: flex;
+    background-color: #f4f8fa;
+  }
+
+.services-header h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-family: "Cuprum", sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.services-header p {
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.service-slide h3 {
+    font-size: 30px;
+    line-height: 30px;
+    font-family: "Cuprum", sans-serif;
+    text-transform: uppercase;
+    color: #32425c;    
+}
+
+.service-slide p {
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;    
+}
+
+
    
    .main-nav-list,
    .session-navigation,
@@ -360,7 +392,29 @@ html {
    }
    
   
-   
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.first-column {
+    width: 620px;
+  }
+
+  .contacts p {
+    margin-bottom: 30px;
+  }
+  
+  .contacts img {
+    margin-bottom: 35px;
+  }
+  
+  .contacts-button {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   
    
 
@@ -410,17 +464,7 @@ html {
     background-color: #ba2732
    }
    
-   .footer-bottom {
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 18px;
    
-   }
-   
-   .footer-bottom a {
-    font: inherit;
-    color: #ffffff;
-   }
    
    .catalog h3 {
     font-family: 'PT Sans', Arial, sans-serif;
@@ -461,7 +505,7 @@ body > * > * > * > * > *{
 }
 */
 
-/* .item1 {
+.item1 {
     width: 300px;
   height: 123px;
   background-color: #f6b22d;
@@ -512,133 +556,7 @@ body > * > * > * > * > *{
 .item-ul-wrapper {
     padding: 0;
 }
-/*-------------------------------------------*/
-   /* .main-header {
-       margin-bottom: 110px;
-       
-   }
 
-  .logo img {
-    margin-top: 13px;
-    margin-left: 55px;
-    margin-right: 56px;
-    margin-bottom: 15px;
-  
-   } 
-   .logo {
-    display: block;
-    width: 220px;
-    height: 47px;
-
-    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-    background-color: #ee3643; 
-   }
-   
-   .search  {
-    
-    width: 240px;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-   }
-
-   .session-btn-list {
-       display: flex;
-   } */
-
- /*  .search {
-    box-sizing: border-box;
-   }
-   */
-
-   /* .session-navigation {
-    width: 470px;
-    
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-   }
-   
-
-   .main-header-navigation {
-   
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 42px;
-    padding: 0px;
-    border: 0px;
-    
-   }
-
-   .header-info {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       opacity: 0.9;
-   }
-
-   .header-info h1{
-    width: 196px;
-  height: 60px;
-  font-family: Cuprum;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: italic;
-  font-stretch: normal;
-  line-height: 1.44;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ee3643;
-    margin-top: 49px;
-    margin-left: 52px;
-    margin-bottom: 50px;
-   }
-
-   
-
-   .header-info-contacts-phone {
-
-    width: 144px;
-    height: 21px;
-    font-family: Cuprum;
-    font-size: 21px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: left;
-    color: #e9292a;
-   }
-
-.header-phone-wrapper{
-
-    border: solid 3px #f83838;
-   }
-
-
-
-   .main-nav-list {
-       display: flex;
-      
-   }
-
- .header-info-h1-wrapper {
-    width: 310px; 
-    
-    margin: 0 auto;
-    padding: 0px;
- }
-   
- .header-info-contacts {
-     width: 310px;
-     margin: 0 auto;
- }
-
- .header-info-sign-in {
-    display: flex;
-    width: 310px; 
-    margin: 0 auto;
-    padding: 0px;
- }
 
 
 
@@ -669,5 +587,25 @@ body > * > * > * > * > *{
 
 .brands-list p {
     width: 235px;
-} */
- */
+} 
+
+
+/*
+-----FOOTER-----
+*/
+
+.footer-top {
+    background-color: #32425c;
+   }
+
+   .footer-bottom {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 18px;
+   
+   }
+   
+   .footer-bottom a {
+    font: inherit;
+    color: #ffffff;
+   }
