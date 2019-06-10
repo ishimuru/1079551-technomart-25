@@ -554,6 +554,24 @@ html {
     flex-grow: 1;
    }
    
+   .brands-list li {
+       margin-right: 20px;
+       margin-bottom: 20px;
+       height: 145px;
+       flex-basis: 220px;
+       border: 1px solid #eaeaea;
+   }
+   .brands-list p {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   }
+
+   .brands-list li:nth-child(4n) {
+        margin-right: 0px;
+   }
    
    
    /* .catalog {
@@ -566,11 +584,11 @@ html {
     padding: 10px;
    }  */
    
-   .brands-list p {
+   /* .brands-list p {
     width: 235px;
    
    } 
-   
+    */
    
    /*
    -----FOOTER-----
@@ -1019,4 +1037,12 @@ html {
           height: 0;
           border: 20px solid white;
           border-left-color: #ee3643;
+        }
+
+        .item1 h3{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            font-family: "Cuprum", sans-serif;
+            color: #12346c;
         }
