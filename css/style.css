@@ -178,6 +178,7 @@ html {
    
    .header-info-wrapper {
     display: flex;
+    justify-content: space-between;
    }
    
    .header-info h1 {
@@ -243,9 +244,9 @@ html {
     list-style: none;
    }
    
-   .header-info-sign-in li {
+   /* .header-info-sign-in li {
     margin-right: 10px;
-   }
+   } */
    
    .header-info-login,
    .header-info-registration {
@@ -514,8 +515,11 @@ html {
    
    .slider-list li{
     margin-bottom: 20px;
+    display: flex;
     
    }
+
+
    .item-ul-wrapper {
     padding: 0;
    }
@@ -1045,4 +1049,16 @@ html {
             line-height: 30px;
             font-family: "Cuprum", sans-serif;
             color: #12346c;
+        }
+
+        .breadcrumbs {
+            display: flex;
+        }
+
+        .catalog2-wrapper {
+            display: flex;
+        }
+
+        .main-wrapper {
+            display: flex;
         }
