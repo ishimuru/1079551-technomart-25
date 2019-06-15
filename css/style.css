@@ -52,6 +52,7 @@ html {
    .main-header {
     font-family: "Cuprum", sans-serif;
     background-color: #f3f7f9;
+    min-height: 320px;
    }
    
    .container{
@@ -819,7 +820,7 @@ html {
     display: flex;
     flex-direction: column;
     width: 220px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     margin-bottom: 20px;
   
     line-height: 20px;
@@ -1051,14 +1052,617 @@ html {
             color: #12346c;
         }
 
+        .breadcrumbs-conteiner {
+            width: 960px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+/* styles for breadcrumbs */
         .breadcrumbs {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin: 0;
+            margin-top: 22px;
+            padding: 0;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18px;
+            text-transform: uppercase;
+            list-style: none;
+        }
+
+        .breadcrumbs li {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        
+        .breadcrumbs li:not(:last-child)::after,
+        .breadcrumbs li:not(:last-child):after {
+            content: "";
+            width: 8px;
+            height: 12px;
+            position: absolute;
+            top: 2px;
+            left: 29px;
+            background-image: url("../img/icon-right-small.svg");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+        
+        .breadcrumbs li:first-child {
+            margin-right: 55px;
+            font-size: 0;
+        }
+        
+        .breadcrumbs .index-link::before,
+        .breadcrumbs .index-link:before {
+            content: "";
+            width: 14px;
+            height: 12px;
+            position: absolute;
+            top: 2px;
+            left: 0;
+            background-image: url("../img/icon-home.svg");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+        
+        .breadcrumbs li:nth-child(2) {
+            margin-right: 40px;
+        }
+        
+        .breadcrumbs li:nth-child(2)::after,
+        .breadcrumbs li:nth-child(2)::after {
+            left: 69px;
+        }
+        
+        .breadcrumbs li:nth-child(3)::after,
+        .breadcrumbs li:nth-child(3)::after {
+            left: 98px;
+        }
+        
+        .breadcrumbs li:nth-child(3) {
+            margin-right: 43px;
+        }
+        
+        .breadcrumbs a {
+            color: #000000;
+        }
+        
+        .breadcrumbs a:visited {
+            color: #000000;
+        }
+        
+        /* styles for catalog-inner */
+
+        .catalog-columns {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* filters */
+            .filters {
+            width: 220px;
+            margin-top: 15px;
+        }
+
+        .filter-name {
+            display: inline-block;
+            width: 220px;
+            height: 38px;
+            margin: 0;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 38px;
+            vertical-align: top;
+            text-transform: uppercase;
+            background-color: #f7f3ec;
+        }
+        
+        .filter-form {
+            position: relative; 
+        }
+        
+        .filters ul {
+            list-style: none;
+        }
+        
+        .filters li {
+            text-transform: uppercase;
+        }
+        
+        .filter-form fieldset {
+            margin: 0;
+            margin-bottom: 17px;
+            padding: 0;
+            border: none;
+        }
+        .filter-form fieldset:first-child,
+        .filter-form fieldset:nth-child(2) {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .filter-form legend {
+            margin: 0;
+            padding: 0;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+
+        .filters .form-button-submit {
+            width: 140px;
+            height: 38px;
+            margin-top: 39px;
+            line-height: 38px;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: 1px solid #e5e5e5;
+            background-color: #ffffff;
+        }
+
+        /* price-filter */
+        .range {
+            width: 220px;
+            height: 80px;
+            margin: 0;
+            margin-top: 15px;
+            position: relative;
+        }
+        
+        .range .progress-bar {
+            width: 180px;
+            height: 2px;
+            position: absolute;
+            top: 38px;
+            left: 20px;
+            background-color: #d7dcde;
+        }
+        
+        .progress-bar .progress {
+            width: 152px;
+            height: 2px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #00ca74;
+        }
+        
+        .range .price-from,
+        .range .price-to {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 29px;
+            left: 20px;
+            cursor: pointer;
+            background-color: #ababab;
+            border: 8px solid #ffffff;
+            border-radius: 50%;
+            -webkit-box-shadow: 0 2px #e1ded9;
+                    box-shadow: 0 2px #e1ded9;
+            z-index: 2;
+        }
+        
+        .range .price-to  {
+            left: 160px;
+        }
+        
+        .min-max-price {
+            margin: 0;
+            margin-top: 7px;
+            margin-bottom: 25px;
+            padding: 0;
+        }
+        
+        .range,
+        .input-range-number {
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 18px;
+            background-color: #f7f3ec;
+            border: none;
+        }
+        
+        .input-range {
+            width: 180px;
+            height: 80px;
+        }
+        
+        .input-range-number {
+            margin: 0;
+            padding: 0;
+            width: 95px;
+            height: 38px;
+            text-align: center;
+        }
+        
+        .price-filter span {
+            padding: 0 6px;
+        }
+
+/* producers and supply filters */
+
+        .producers-filter ul,
+        .supply-filter ul {
+            margin: 4px 0 12px;
+            padding: 0;
+        }
+
+        .producers-filter label,
+        .supply-filter label {
+            padding-left: 35px;
+            position: relative;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 40px;
+            cursor: pointer;
+        }
+
+        /* producers filter */
+        .filter-input-checkbox ~ label::before,
+        .filter-input-checkbox ~ label:before {
+            content: "";
+            width: 27px;
+            height: 23px;
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-image: url("../img/checkbox-off.svg");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            opacity: 0.2;
+        }
+        
+        .filter-input-checkbox:checked ~ label::before,
+        .filter-input-checkbox:checked ~ label:before {
+            left: 0;
+            background-image: url("../img/checkbox-on.svg");
+        }
+        
+        .filter-input-checkbox:hover ~ label::before,
+        .filter-input-checkbox:hover ~ label:before {
+            opacity: 0.3;
+        }
+        
+        .filter-input-checkbox:disabled ~ label {
+            opacity: 0.4;
+        }
+
+        /* supply-filter */
+.supply-filter {
+    border-bottom: none;
+}
+
+.filter-input-radio ~ label::before,
+.filter-input-radio ~ label:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    background-image: url("../img/radio-off.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+}
+
+.filter-input-radio:checked ~ label::before,
+.filter-input-radio:checked ~ label:before {
+    background-image: url("../img/radio-on.svg");
+}
+
+.filter-input-radio:hover ~ label::before,
+.filter-input-radio:hover ~ label:before {
+    opacity: 0.3;
+}
+
+.filter-input-radio:disabled ~ label {
+    opacity: 0.4;
+}
+
+/* sort-filter */
+.sort-filter {
+    width: 700px;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -51px;
+    left: 238px;
+    background-color: #f7f3ec;
+    border-bottom: none;
+}
+
+.sort-filter-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 700px;
+    height: 38px;
+    padding-top: 5px; 
+    padding-left: 23px;
+    padding-right: 17px; 
+    position: relative;
+}
+
+.sort-filter h3 {
+    margin: 0;
+    padding: 0;
+    margin-right: 139px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.sort-filter ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.sort-filter .sort-type {
+    width: 450px;
+    margin-right: 46px;
+}
+
+.sort-option label {
+    color:  rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border-bottom: 1px dotted #ee3643; 
+}
+
+.sort-option:first-child label {
+    margin-right: 71px;
+}
+
+.sort-option:nth-child(2) label {
+    margin-right: 65px;
+}
+
+.sort-option label:hover {
+    color: #000000;
+    border-bottom: 1px solid #ee3643; 
+}
+
+.sort-input:checked + label,
+.sort-input:active + label {
+    border: none;
+    color: #ee3643;
+}
+
+.sort-filter .order {
+    width: 45px;
+    font-size: 0;
+}
+
+.order-option label {
+    position: relative;
+    font-size: 0;
+}
+
+.order-option label::before,
+.order-option label:before {
+    content: "";
+    width: 10px;
+    height: 11px;
+    position: absolute;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%) brightness(2);
+            filter: grayscale(100%) brightness(2);
+}
+
+.order-radio:hover + label::before,
+.order-radio:hover + label:before {
+    -webkit-filter: brightness(0);
+            filter: brightness(0);
+}
+
+.order-radio:checked + label::before,
+.order-radio:checked + label:before,
+.order-radio:active + label::before,
+.order-radio:active + label:before {
+    -webkit-filter: grayscale(0) brightness(1);
+            filter: grayscale(0) brightness(1);
+}
+
+.order-option label[for="asc"]::before,
+.order-option label[for="asc"]:before {
+    top: -4px;
+    left: -3px;
+    background-image: url("../img/icon-up-dir.png");
+}
+
+.order-option label[for="desc"]::before,
+.order-option label[for="desc"]:before {
+    top: -4px;
+    left: 29px;
+    background-image: url("../img/icon-down-dir.png");
+}
+
+/* catalog */
+
+.catalog-inner h2 {
+    width: 100%;
+    height: 89px;
+    margin-bottom: 0;
+    padding-left: 30px;
+    padding-top: 25px;
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #32425c;
+    text-transform: uppercase;
+    background-color: #f2f6f8;
+}
+
+.catalog-inner {
+    width: 960px;
+    margin: 0;
+    margin-top: 55px;
+    padding: 0;
+}
+
+.catalog-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 700px;
+    margin: 0;
+    margin-top: 17px;
+    padding: 0;
+    list-style: none;
+}
+
+.catalog-inner-wrapper {
+    width: 700px;
+    margin: 0;
+    margin-top: 55px;
+    padding: 0;
+}
+
+.catalog-list-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+/* styles for paginator */
+.pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    margin-top: 32px;
+    padding: 0;
+    list-style: none;
+}
+
+.pagination-item a {
+    color: #000000;
+}
+
+.pagination-item a:visited {
+    color: #000000;
+}
+
+.pagination-item {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    line-height: 38px;
+    text-align: center;
+    vertical-align: top;
+    text-transform: uppercase;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.pagination-item:last-of-type {
+    width: 140px;
+}
+
+.pagination-item:hover {
+    border: 1px solid #bdc6ca;
+}
+
+.pagination-item:active {
+    border: 1px solid #ee3643;
+}
+
+.pagination-item-current {
+    color: #ffffff;
+    background-color: #ee3643;
+}
+
+/* styles for about-category block */
+.about-category {
+    min-width: 960px;
+    background-color: #f2f6f8;
+}
+
+.about-category-inner {
+    min-height: 261px;
+    margin-top: 60px;
+    margin-bottom: -15px;
+    padding-top: 40px;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.about-category h2 {
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+.about-category p {
+    width: 960px;
+}
+
+
+        /* .main-wrapper {
             display: flex;
         }
 
         .catalog2-wrapper {
             display: flex;
+            
+            
         }
 
-        .main-wrapper {
-            display: flex;
+        .catalog-list-inner li:nth-child(3n) {
+            margin-right: 0px;
+
         }
+
+        .catalog-list-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0px;
+        } */
+
+
+
+        /* pagination */
+
+
